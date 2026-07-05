@@ -8,10 +8,7 @@ body {
     text-align: center;
     background-color: #FFFBEA;
 
-    font-family: "UD Digi Kyokasho NP-B",
-                 "UD デジタル 教科書体 N-B",
-                 "Yu Gothic UI",
-                 sans-serif;
+    font-family: "Klee One", sans-serif;
 }
 
 /* ==========================
@@ -66,9 +63,9 @@ body {
 
 .choice img {
 
-    width: 300px;
+    width: 240px;
 
-    height: 300px;
+    height: 240px;
 
     object-fit: contain;
 
