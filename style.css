@@ -1,0 +1,207 @@
+/* ==========================
+   全体
+========================== */
+
+body {
+    margin: 0;
+    padding: 20px;
+    text-align: center;
+    background-color: #FFFBEA;
+
+    font-family: "UD Digi Kyokasho NP-B",
+                 "UD デジタル 教科書体 N-B",
+                 "Yu Gothic UI",
+                 sans-serif;
+}
+
+/* ==========================
+   ひらがな
+========================== */
+
+#kana {
+
+    font-size: 140px;
+
+    font-weight: bold;
+
+    color: #222;
+
+    margin: 30px 0 40px 0;
+
+}
+
+/* ==========================
+   選択肢
+========================== */
+
+#choices {
+
+    display: flex;
+
+    justify-content: center;
+
+    align-items: center;
+
+    gap: 40px;
+
+    flex-wrap: wrap;
+
+}
+
+/* ==========================
+   画像カード
+========================== */
+
+.choice {
+
+    transition: transform 0.2s;
+
+}
+
+.choice:hover {
+
+    transform: scale(1.05);
+
+}
+
+.choice img {
+
+    width: 300px;
+
+    height: 300px;
+
+    object-fit: contain;
+
+    background: white;
+
+    border: 6px solid transparent;
+
+    border-radius: 25px;
+
+    cursor: pointer;
+
+    box-shadow: 0 5px 12px rgba(0,0,0,0.15);
+
+    transition: all 0.2s;
+
+}
+
+/* ==========================
+   正解画像
+========================== */
+
+.correct {
+
+    border: 6px solid #39b54a !important;
+
+    transform: scale(1.12);
+
+}
+
+/* ==========================
+   不正解画像
+========================== */
+
+.wrong {
+
+    border: 6px solid #ff4444 !important;
+
+    opacity: 0.8;
+
+}
+
+/* ==========================
+   メッセージ
+========================== */
+
+#message {
+
+    margin-top: 35px;
+
+    min-height: 60px;
+
+    font-size: 42px;
+
+    font-weight: bold;
+
+    color: #333;
+
+}
+
+/* ==========================
+   次へボタン
+========================== */
+
+#nextButton {
+
+    margin-top: 20px;
+
+    padding: 18px 50px;
+
+    font-size: 34px;
+
+    font-weight: bold;
+
+    color: white;
+
+    background: #4CAF50;
+
+    border: none;
+
+    border-radius: 18px;
+
+    cursor: pointer;
+
+    transition: 0.2s;
+
+}
+
+#nextButton:hover {
+
+    background: #3b9c40;
+
+    transform: scale(1.05);
+
+}
+
+/* ==========================
+   スマホ対応
+========================== */
+
+@media (max-width: 900px) {
+
+    #kana {
+
+        font-size: 90px;
+
+    }
+
+    #choices {
+
+        gap: 20px;
+
+    }
+
+    .choice img {
+
+        width: 220px;
+
+        height: 220px;
+
+    }
+
+    #message {
+
+        font-size: 34px;
+
+    }
+
+    #nextButton {
+
+        font-size: 28px;
+
+        padding: 15px 35px;
+
+    }
+
+}
