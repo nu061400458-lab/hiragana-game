@@ -168,7 +168,15 @@ function showChoices(list) {
 
         img.onclick = () => judge(item, img);
 
+        // 頭文字表示
+        const label = document.createElement("div");
+
+        label.className = "kana-label hidden";
+
+        label.textContent = item.kana;
+
         div.appendChild(img);
+        div.appendChild(label);
 
         choices.appendChild(div);
 
