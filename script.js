@@ -247,6 +247,12 @@ function judge(item, clickedImg) {
 
 nextButton.addEventListener("click", function () {
 
+    // 画面の一番上へ移動
+    window.scrollTo({
+        top: 0,
+        behavior: "smooth"
+    });
+
     nextQuestion();
 
 });
