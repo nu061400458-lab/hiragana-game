@@ -202,3 +202,21 @@ body {
     }
 
 }
+
+.kana-label{
+
+    margin-top:8px;
+
+    font-size:34px;
+
+    font-weight:bold;
+
+    color:#333;
+
+}
+
+.hidden{
+
+    display:none;
+
+}
