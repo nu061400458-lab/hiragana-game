@@ -197,6 +197,10 @@ function judge(item, clickedImg) {
         correctSound.play();
 
         message.textContent = "⭕ せいかい！";
+        
+        document.querySelectorAll(".kana-label").forEach(label => {
+            label.classList.remove("hidden");
+        });
 
         // 緑枠
         clickedImg.classList.add("correct");
